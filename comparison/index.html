@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claudienne Hibbert-Smith &middot; Before vs After &middot; AG1 Consulting</title>
+<meta name="description" content="$500M+ in personal real estate sales. $1B+ team total. NAREW founder. Zero AI search visibility. Here is what we'd fix in 90 days.">
+<meta property="og:title" content="Claudienne Hibbert-Smith &middot; Before vs After">
+<meta property="og:description" content="The $500M+ producer who built the women's real estate community. AI search has never heard of her. Audit, comparison, 90-day plan.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --noir: #1c1c1c;
+  --noir-deep: #0d0d0d;
+  --noir-soft: #2a2a2a;
+  --gold: #dac08c;
+  --gold-bright: #edc967;
+  --gold-deep: #b29146;
+  --bronze: #926f34;
+  --charcoal: #2c3345;
+  --cream: #f8f2e3;
+  --cream-dim: #c9c1ad;
+  --white: #ffffff;
+  --line: rgba(218, 192, 140, 0.18);
+  --line-soft: rgba(218, 192, 140, 0.06);
+  --red-x: #b85a4a;
+  --green-check: #6ba56e;
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--noir); color: var(--cream); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E"); opacity: 0.025; pointer-events: none; z-index: 1; mix-blend-mode: overlay; }
+a { color: var(--cream); text-decoration: none; }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+.hero { padding: 120px 0 80px; text-align: center; position: relative; z-index: 2; }
+.hero::before { content: ''; position: absolute; top: 5%; left: 50%; transform: translateX(-50%); width: 900px; height: 600px; background: radial-gradient(ellipse, rgba(218, 192, 140, 0.10), transparent 65%); filter: blur(80px); pointer-events: none; }
+.eyebrow { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 24px; display: block; position: relative; z-index: 2; }
+.hero h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(46px, 7vw, 92px); line-height: 1.0; letter-spacing: -0.025em; max-width: 1080px; margin: 0 auto 32px; position: relative; z-index: 2; }
+.hero h1 em { font-style: italic; color: var(--gold); }
+.hero p { color: var(--cream-dim); font-size: 18px; max-width: 740px; margin: 0 auto; position: relative; z-index: 2; line-height: 1.6; }
+
+.section { padding: 80px 0; position: relative; z-index: 2; }
+.section-title { font-family: var(--serif); font-weight: 600; font-size: clamp(32px, 4vw, 56px); letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 16px; }
+.section-title em { font-style: italic; color: var(--gold); }
+.section-sub { color: var(--cream-dim); font-size: 17px; margin-bottom: 56px; max-width: 740px; line-height: 1.6; }
+
+/* Compare cards */
+.compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.compare-card { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--noir-soft); transition: transform 0.3s, border-color 0.3s; }
+.compare-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+.compare-label { padding: 16px 24px; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; }
+.compare-label.current { background: rgba(184, 90, 74, 0.10); color: var(--red-x); border-bottom: 1px solid rgba(184, 90, 74, 0.3); }
+.compare-label.new { background: rgba(218, 192, 140, 0.10); color: var(--gold); border-bottom: 1px solid var(--line); }
+.compare-preview { aspect-ratio: 16/10; background: var(--noir-deep); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.compare-preview-content { position: relative; z-index: 2; text-align: center; padding: 32px; }
+.compare-preview-content h3 { font-family: var(--serif); font-size: 32px; font-weight: 600; letter-spacing: -0.01em; }
+.compare-preview-content p { color: var(--cream-dim); font-size: 14px; margin-top: 12px; }
+.compare-preview.current-bg { background: linear-gradient(135deg, var(--noir-deep), var(--charcoal)); }
+.compare-preview.new-bg { background: linear-gradient(135deg, rgba(218, 192, 140, 0.4), var(--charcoal), var(--noir-deep)); }
+.compare-body { padding: 28px 32px; }
+.compare-body h4 { font-family: var(--serif); font-size: 24px; font-weight: 600; margin-bottom: 8px; letter-spacing: -0.01em; }
+.compare-body p { color: var(--cream-dim); font-size: 14px; margin-bottom: 20px; }
+.compare-body ul { list-style: none; margin-bottom: 24px; }
+.compare-body li { padding: 6px 0; font-size: 14px; color: var(--cream-dim); display: flex; align-items: flex-start; gap: 10px; }
+.compare-body li::before { font-size: 12px; margin-top: 2px; flex-shrink: 0; font-weight: 700; }
+.current li::before { content: '\2717'; color: var(--red-x); }
+.new li::before { content: '\2713'; color: var(--green-check); }
+.compare-cta { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 4px; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.25s; }
+.cta-current { border: 1px solid rgba(184, 90, 74, 0.4); color: var(--red-x); }
+.cta-current:hover { background: rgba(184, 90, 74, 0.08); }
+.cta-new { background: var(--gold); color: var(--noir); }
+.cta-new:hover { background: var(--gold-bright); }
+
+/* Bombshell */
+.bombshell-section { background: var(--noir-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); position: relative; }
+.bombshell-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at top right, rgba(218, 192, 140, 0.08), transparent 60%); pointer-events: none; }
+.bombshell-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 64px; align-items: center; position: relative; z-index: 2; }
+.bombshell-stat { font-family: var(--serif); font-size: clamp(80px, 14vw, 200px); font-weight: 600; line-height: 1; color: var(--gold); letter-spacing: -0.03em; }
+.bombshell-stat em { font-style: italic; }
+.bombshell-stat-label { font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(248, 242, 227, 0.55); margin-top: 18px; }
+.bombshell-content h2 { font-family: var(--serif); font-size: clamp(32px, 4vw, 56px); font-weight: 600; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 24px; }
+.bombshell-content h2 em { font-style: italic; color: var(--gold); }
+.bombshell-content p { color: var(--cream-dim); font-size: 17px; line-height: 1.7; margin-bottom: 16px; }
+.bombshell-content p strong { color: var(--cream); font-weight: 600; }
+.queries-list { margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line); }
+.query-item { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding: 12px 0; font-size: 14px; color: var(--cream-dim); border-bottom: 1px solid var(--line-soft); }
+.query-item:last-child { border-bottom: none; }
+.query-x { color: var(--red-x); font-weight: 700; font-size: 16px; flex-shrink: 0; }
+
+/* Production credibility */
+.credibility-section { background: var(--noir); position: relative; overflow: hidden; }
+.credibility-section::before { content: ''; position: absolute; bottom: -20%; right: -10%; width: 700px; height: 700px; background: radial-gradient(circle, rgba(44, 51, 69, 0.4), transparent 65%); filter: blur(60px); }
+.credibility-grid { display: grid; grid-template-columns: 1fr; gap: 0; margin-top: 40px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--noir-soft); }
+.credibility-row { display: grid; grid-template-columns: 2fr 1.2fr 1fr 1fr; align-items: center; padding: 22px 32px; border-bottom: 1px solid var(--line); }
+.credibility-row:last-child { border-bottom: none; }
+.credibility-row.header { background: var(--noir-deep); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; color: rgba(248,242,227,0.6); padding: 18px 32px; }
+.credibility-row.you { background: rgba(218, 192, 140, 0.06); }
+.credibility-name { font-family: var(--serif); font-size: 19px; font-weight: 600; }
+.credibility-name.you { color: var(--gold); }
+.credibility-cell { font-size: 14px; color: var(--cream-dim); }
+.credibility-cell strong { color: var(--cream); font-weight: 600; }
+
+/* Plan */
+.plan-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 40px; }
+.plan-card { padding: 32px; background: var(--noir-soft); border: 1px solid var(--line); border-radius: 6px; transition: all 0.3s; position: relative; }
+.plan-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+.plan-num { font-family: var(--serif); font-size: 13px; font-style: italic; color: var(--gold); margin-bottom: 16px; display: block; }
+.plan-card h4 { font-family: var(--serif); font-size: 24px; font-weight: 600; line-height: 1.15; margin-bottom: 12px; letter-spacing: -0.01em; }
+.plan-card p { color: var(--cream-dim); font-size: 14px; line-height: 1.6; }
+.plan-week { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--bronze); margin-top: 16px; display: inline-block; font-weight: 600; }
+
+/* Scorecard */
+.scorecard { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--noir-soft); }
+.scorecard-header { display: grid; grid-template-columns: 2fr 1fr 1fr; padding: 24px 32px; background: var(--noir-deep); border-bottom: 1px solid var(--line); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600; }
+.scorecard-row { display: grid; grid-template-columns: 2fr 1fr 1fr; padding: 18px 32px; border-bottom: 1px solid var(--line); align-items: center; }
+.scorecard-row:last-child { border-bottom: none; }
+.scorecard-row:hover { background: rgba(218, 192, 140, 0.04); }
+.scorecard-label { font-size: 15px; color: var(--cream); }
+.scorecard-cell { font-size: 14px; }
+.scorecard-cell.current { color: var(--red-x); }
+.scorecard-cell.new { color: var(--green-check); font-weight: 600; }
+
+.cta-section { padding: 120px 0; text-align: center; position: relative; z-index: 2; }
+.cta-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(218, 192, 140, 0.10), transparent 60%); pointer-events: none; }
+.cta-section h2 { font-family: var(--serif); font-size: clamp(36px, 5vw, 64px); font-weight: 600; letter-spacing: -0.025em; margin-bottom: 24px; line-height: 1.05; }
+.cta-section h2 em { font-style: italic; color: var(--gold); }
+.cta-section p { color: var(--cream-dim); font-size: 17px; margin-bottom: 40px; max-width: 580px; margin-left: auto; margin-right: auto; }
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; z-index: 2; }
+.cta-button { display: inline-flex; align-items: center; gap: 8px; padding: 18px 36px; border-radius: 4px; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; transition: all 0.25s; }
+.cta-button.primary { background: var(--gold); color: var(--noir); }
+.cta-button.primary:hover { background: var(--gold-bright); transform: translateY(-2px); }
+.cta-button.ghost { border: 1px solid var(--line); color: var(--cream); }
+.cta-button.ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+footer { padding: 32px 0; border-top: 1px solid var(--line); text-align: center; font-size: 12px; color: rgba(248, 242, 227, 0.4); position: relative; z-index: 2; }
+footer a { color: var(--gold); }
+
+@media (max-width: 1024px) {
+  .compare-grid { grid-template-columns: 1fr; }
+  .bombshell-grid { grid-template-columns: 1fr; gap: 32px; }
+  .plan-grid { grid-template-columns: 1fr 1fr; }
+  .credibility-row { grid-template-columns: 1fr 1fr; gap: 12px; padding: 16px 20px; }
+  .credibility-row.header { display: none; }
+  .credibility-cell::before { content: attr(data-label) ': '; color: rgba(248,242,227,0.5); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; margin-right: 6px; }
+}
+@media (max-width: 720px) {
+  .plan-grid { grid-template-columns: 1fr; }
+  .credibility-row { grid-template-columns: 1fr; gap: 6px; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <span class="eyebrow">Prepared for Claudienne Hibbert-Smith &middot; AG1 Consulting</span>
+    <h1>$1B in closed deals.<br>$377M in a single year.<br><em>Zero</em> AI search recommendations.</h1>
+    <p>What claudiennehibbert.com looks like to AI search today versus what 90 days of citation work, schema, and authority surfaces could deliver. The $500M personal-producer credentials and the NAREW community already exist. AI search just doesn't know.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Claudienne's authority site: <em>before vs after</em></h2>
+    <p class="section-sub">Same brand. Same NAREW. Same $1B+ team production. Two very different chances of being recommended when an agent asks ChatGPT for the best real estate coach in 2026.</p>
+
+    <div class="compare-grid">
+      <div class="compare-card">
+        <div class="compare-label current">Today &middot; Live Site</div>
+        <div class="compare-preview current-bg">
+          <div class="compare-preview-content">
+            <h3>claudiennehibbert.com</h3>
+            <p>Currently live &middot; Click to view</p>
+          </div>
+        </div>
+        <div class="compare-body current">
+          <h4>What's there now</h4>
+          <p>The current site holds the brand and a portion of the offer but the search infrastructure that AI engines reward is incomplete, and the citation surfaces are missing entirely.</p>
+          <ul>
+            <li>Person schema partial; Service schema missing for Private Mentorship and NAREW PLUS+</li>
+            <li>Organization schema missing (NAREW, Hibbert Group, TRU Real Estate Exchange)</li>
+            <li>No Review schema (named-result testimonials invisible to AI)</li>
+            <li>No FAQ schema (AI engines have nothing to lift verbatim)</li>
+            <li>$377M / $1B / NAREB Top Teams Award not surfaced as authority strip</li>
+            <li>Zero placements on The Close, Inman, RISMedia, or Forbes Real Estate Council</li>
+            <li>Invisible across all 4 AI question queries we tested</li>
+          </ul>
+          <a href="https://claudiennehibbert.com/" target="_blank" rel="noopener" class="compare-cta cta-current">View Live Site &rarr;</a>
+        </div>
+      </div>
+
+      <div class="compare-card">
+        <div class="compare-label new">Proposed &middot; Authority Build</div>
+        <div class="compare-preview new-bg">
+          <div class="compare-preview-content">
+            <h3>Claudienne, search-found</h3>
+            <p>Click to explore the demo &rarr;</p>
+          </div>
+        </div>
+        <div class="compare-body new">
+          <h4>What we'd ship</h4>
+          <p>A schema-and-citation rebuild that puts Claudienne in the AI Overview answer for "best real estate coach 2026" and on The Close's annual list, without diluting the voice or the aesthetic.</p>
+          <ul>
+            <li>Full Person + Service + Organization + Review + FAQ + Author schema</li>
+            <li>$500M+ producer authority strip surfaced above the fold</li>
+            <li>Wikipedia / Wikidata entity submitted</li>
+            <li>5 pillar content pieces optimized for FAQ pickup</li>
+            <li>Citation campaign across 12 priority sources (The Close, Inman, RISMedia, Forbes Real Estate Council, HousingWire, WomenInRealEstate, NAR Spire)</li>
+            <li>25-podcast pitch sequence to top real estate shows</li>
+            <li>Performance gate: 2 of 4 AI engine mentions by day 90, or work continues at no additional cost</li>
+          </ul>
+          <a href="../" class="compare-cta cta-new">Open the Demo &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bombshell-section">
+  <div class="container">
+    <div class="bombshell-grid">
+      <div>
+        <div class="bombshell-stat"><em>0</em><span style="font-size: 0.5em; opacity: 0.6">/4</span></div>
+        <div class="bombshell-stat-label">AI Engine Recommendations</div>
+      </div>
+      <div class="bombshell-content">
+        <h2>You're not in the <em>shortlist.</em></h2>
+        <p>We asked ChatGPT, Perplexity, and Google's AI Overview the four question-style queries an agent ready for $5K to $25K coaching actually types. Across all four, Claudienne Hibbert-Smith was recommended zero times.</p>
+        <p>The lists were dominated by Tom Ferry, Brian Buffini, BPM REIA, and Women In Real Estate. <strong>Tom Ferry has zero personal real estate production. He is purely a career coach.</strong> He is recommended by AI search because his citation density is decade-old. The "is the coach actually a producer?" question is exactly what AI search would reward Claudienne for if it were structurally readable.</p>
+        <div class="queries-list">
+          <div class="query-item"><span>Best real estate coach Miami 2026?</span><span class="query-x">&times;</span></div>
+          <div class="query-item"><span>How to scale from 10 to 30 real estate deals?</span><span class="query-x">&times;</span></div>
+          <div class="query-item"><span>Real estate mentorship for women agents?</span><span class="query-x">&times;</span></div>
+          <div class="query-item"><span>eXp Realty top producer mentorship Florida?</span><span class="query-x">&times;</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section credibility-section">
+  <div class="container">
+    <h2 class="section-title">Production credentials <em>nobody else</em> on the lists has.</h2>
+    <p class="section-sub">Side-by-side with the coaches AI search currently recommends. The "is this coach actually a producer?" disparity is the entire story. Career coaches are recommended over $500M+ producers because their citation density is older. Both are fixable.</p>
+
+    <div class="credibility-grid">
+      <div class="credibility-row header">
+        <div>Coach</div>
+        <div>Personal Production</div>
+        <div>Audience</div>
+        <div>AI Recommend</div>
+      </div>
+      <div class="credibility-row you">
+        <div class="credibility-name you">Claudienne Hibbert-Smith</div>
+        <div class="credibility-cell" data-label="Production"><strong>$500M+ personal, $1B+ team</strong></div>
+        <div class="credibility-cell" data-label="Audience"><strong>213K+</strong></div>
+        <div class="credibility-cell" data-label="AI"><strong>0 of 4</strong></div>
+      </div>
+      <div class="credibility-row">
+        <div class="credibility-name">Tom Ferry</div>
+        <div class="credibility-cell" data-label="Production">$0 (career coach)</div>
+        <div class="credibility-cell" data-label="Audience">350K+</div>
+        <div class="credibility-cell" data-label="AI">4 of 4</div>
+      </div>
+      <div class="credibility-row">
+        <div class="credibility-name">Krista Mashore</div>
+        <div class="credibility-cell" data-label="Production">$40M+ personal</div>
+        <div class="credibility-cell" data-label="Audience">100K+</div>
+        <div class="credibility-cell" data-label="AI">3 of 4</div>
+      </div>
+      <div class="credibility-row">
+        <div class="credibility-name">Sharran Srivatsaa</div>
+        <div class="credibility-cell" data-label="Production">$4B+ personal</div>
+        <div class="credibility-cell" data-label="Audience">200K+</div>
+        <div class="credibility-cell" data-label="AI">2 of 4</div>
+      </div>
+      <div class="credibility-row">
+        <div class="credibility-name">Women In Real Estate (org)</div>
+        <div class="credibility-cell" data-label="Production">n/a (community)</div>
+        <div class="credibility-cell" data-label="Audience">50K+</div>
+        <div class="credibility-cell" data-label="AI">4 of 4</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">The <em>90-day</em> plan.</h2>
+    <p class="section-sub">Four phases. By day 90, Claudienne is a named recommendation in AI search, has at least 5 placements on curated authority lists, and is on the Forbes Real Estate Council pathway.</p>
+
+    <div class="plan-grid">
+      <div class="plan-card">
+        <span class="plan-num">&mdash; Phase 01</span>
+        <h4>Foundation</h4>
+        <p>Schema deployment (Person, Service, Organization, Review, FAQ, Author). Authority strip with $500M / $1B / NAREB Top Teams. Wikipedia draft. Search Console wiring.</p>
+        <span class="plan-week">Weeks 1&ndash;2</span>
+      </div>
+      <div class="plan-card">
+        <span class="plan-num">&mdash; Phase 02</span>
+        <h4>Citation Campaign</h4>
+        <p>The Close annual list pitch, Inman feature, Forbes Real Estate Council, RISMedia, HousingWire, WomenInRealEstate.com partnership, NAR Spire submission. Plus 25-podcast pitch sequence.</p>
+        <span class="plan-week">Weeks 2&ndash;8</span>
+      </div>
+      <div class="plan-card">
+        <span class="plan-num">&mdash; Phase 03</span>
+        <h4>Authority Content</h4>
+        <p>5 pillar pieces (10 to 30 deals scaling, Private Mentorship vs NAREW PLUS+, NAREW blueprint for women agents, teen mom to $1B frameworks, eXp top producer coaching).</p>
+        <span class="plan-week">Weeks 4&ndash;10</span>
+      </div>
+      <div class="plan-card">
+        <span class="plan-num">&mdash; Phase 04</span>
+        <h4>Reputation Flywheel</h4>
+        <p>Monthly named-result agent case studies. AI mention monitoring across 4 engines weekly. Citation maintenance. Application volume + NAREW PLUS+ subscription growth tracked monthly.</p>
+        <span class="plan-week">Weeks 6&ndash;12</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">The <em>scorecard.</em></h2>
+    <p class="section-sub">Every signal AI search engines check, the current claudiennehibbert.com graded against the 90-day rebuild.</p>
+
+    <div class="scorecard">
+      <div class="scorecard-header">
+        <div>Signal</div>
+        <div>Today</div>
+        <div>After rebuild</div>
+      </div>
+      <div class="scorecard-row"><div class="scorecard-label">Person + Service schema</div><div class="scorecard-cell current">Partial</div><div class="scorecard-cell new">&check; Full</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Organization schema (NAREW, Hibbert Group, TRU)</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; Full</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Review schema (named-result testimonials)</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; Live</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">FAQPage schema (AI search lift)</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; 8+ Q&amp;As</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">$500M / $1B authority strip</div><div class="scorecard-cell current">Buried</div><div class="scorecard-cell new">&check; Above the fold</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Wikipedia / Wikidata entity</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">&check; Live</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">The Close "Best Real Estate Coaches" inclusion</div><div class="scorecard-cell current">&times; Missing</div><div class="scorecard-cell new">Pitched / target</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Forbes Real Estate Council pathway</div><div class="scorecard-cell current">&times; None</div><div class="scorecard-cell new">In progress</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">AI engine recommendation rate</div><div class="scorecard-cell current">0 of 4</div><div class="scorecard-cell new">3 of 4 (target)</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Curated "best of" list placements</div><div class="scorecard-cell current">0</div><div class="scorecard-cell new">5+</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Major real estate podcast appearances (90 days)</div><div class="scorecard-cell current">~0</div><div class="scorecard-cell new">6+ booked</div></div>
+      <div class="scorecard-row"><div class="scorecard-label">Authority tier</div><div class="scorecard-cell current">Brand-only</div><div class="scorecard-cell new">Brand + Search</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>The agent searching for the coach who<br><em>actually scaled to $500M</em> can't find you.</h2>
+    <p>Today, ChatGPT is sending her to a coach who has never closed a deal personally. Ninety days from now, that changes. Let's talk.</p>
+    <div class="cta-buttons">
+      <a href="mailto:info@andreicopy.net" class="cta-button primary">Book the Strategy Call &rarr;</a>
+      <a href="../" class="cta-button ghost">Open the Demo &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>AG1 Consulting &middot; Andrei Givero &middot; info@andreicopy.net &middot; <a href="https://andrei170.github.io/ag1/">andrei170.github.io/ag1</a></span>
+</footer>
+
+</body>
+</html>
